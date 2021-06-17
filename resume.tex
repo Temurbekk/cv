@@ -1,88 +1,197 @@
-\documentclass{article}
+\documentclass[letterpaper,11pt]{article}
 
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
 \usepackage{titlesec}
 \usepackage{titling}
-\usepackage{hyperref}
-\hypersetup{
-    colorlinks=true,
-    linkcolor=black,      
-    urlcolor=black,
-    }
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\input{glyphtounicode}
 
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
 
-\titleformat{\section}{\huge}{}{0em}{}[\titlerule]
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
 
-\titleformat{\subsection}{}{\bfseries}{0em}{}
+\urlstyle{same}
 
-\titleformat{\subsubsection}[runin]{\bfseries}{}{0em}{}
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+\setlength{\footskip}{4.08003pt}
 
-\renewcommand{\maketitle}{
-\begin{center}
-{\LARGE\bfseries  
- 
-\theauthor}
-\vspace{0.50em}
-\break
-\href{mailto:temurbeksab98@gmail.com}{temurbeksab98@gmail.com} $|$ (646) 715-5360 $|$ Brooklyn, NY
-\vspace{0.25em}
-\break
-\href{http://www.temur.dev}{temur.dev} $|$ \href{http://github.com/Temurbekk}{github.com/Temurbekk} $|$ \href{http://linkedin.com/in/temursabirov}{linkedin.com/in/temursabirov}
-\break
-\vspace{-0.50em}
-\end{center}
-    
-    }
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+\pdfgentounicode=1
+
+\titleformat{\subsection}[runin]{\bfseries}{}{0em}{}
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[2]{
+  \item\small{
+    \textbf{#1}#2\vspace{-2pt}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-1pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-5pt}
+}
+
+\renewcommand{\labelitemii}{$\circ$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=*]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+\renewcommand{\maketitle}{\begin{itemize}\vspace{0.25em}}
 
 \begin{document}
-\title{R\'esum\'e}
-\author{Temurbek Sabirov}
 
-\maketitle
-
-\section{Technical Skills}
-\subsubsection{Languages:}
-Java, JavaScript, Python, TypeScript, Go, Swift
-\subsubsection{Technologies:}
-React, React Native, Flutter, PostgreSQL, Firebase, GraphQL, Node.js, Selenium, Angular
-\section{Education}
-\subsection{City University of New York - Brooklyn College}
-Bachelor of Science in Computer Science
+%----------HEADING-----------------
+\begin{center}
+    
+    \textbf{\huge Temurbek Sabirov}
+    \vspace{0.50em}
+    \break
+    \href{mailto:temurbeksab98@gmail.com}{temurbeksab98@gmail.com} $|$ (646) 715-5360 $|$ Brooklyn, NY
+    \vspace{0.25em}
+    \break
+    \href{http://www.temur.dev}{temur.dev} $|$ \href{http://github.com/Temurbekk}{github.com/Temurbekk} $|$ \href{http://linkedin.com/in/temursabirov}{linkedin.com/in/temursabirov}
+    \break
+    
+\end{center}
+\vspace{-2.50em}
+%--------PROGRAMMING SKILLS------------
+\section{Programming Skills}
+    
+\resumeItemListStart
+\resumeItem{Programming languages:}
+  { Java, JavaScript, Python, TypeScript, Go, Swift}
+\resumeItem{Technologies:}
+  { React/React Native, Flutter, PostgreSQL, Firebase, GraphQL, Node.js., Selenium, Angular}
+\resumeItemListEnd
+\vspace{-0.5em}
+%-----------EXPERIENCE-----------------
 \section{Experience}
-\subsection{Fidelity Investments}
-\subsubsection{Associate Software Engineering}
-Associate Software Engineer in Personal Investing Business Unit
-Many frontend components were overlooked and needed to be reused
-With the team of 3 other associates, created a Storybookjs dashboard to display all of the Angular components
-Resulted in engineers, designers, and other associates to reuse already defined components
-\subsection{Acme Pro Academy}
-\subsubsection{Lead Technical Instructor}
-Lead Instructor at automation testing bootcamp
-Helping students from different background to break into the tech industry
-Teaching class of 10 students core concepts of automation testing using Java, Selenium WebDriver, and more
-Managed to help 3 students find full-time positions at tech companies
-\subsection{Errunds}
-\subsubsection{Software Engineer Intern}
-Software Engineer Intern responsible for creating an admin web site
-Company was about to release its products to the public and did not have a way to manage customers
-With a co-intern, implemented admin site using React, Material UI, Apollo GraphQL, and Node.js API
-Resulted in company to have better structure and control over managing customers
-\subsection{KekoBox}
-\subsubsection{Software Engineer Intern}
-Software Engineer Intern responsible for managing customer orders in the web application
-Company did now have a way to manage customer fulfilled and unfulfilled orders
-Created endpoints for fulfilled and unfulfilled orders using Buffalo and front-end components with React
-Resulted in company raising \$5000 dollars from sponsors and increase its gross profit by 8\%
-\section{Projects}
-\subsection{Fit-Pal}
-\subsubsection{Web App}
-A Web Application built for workout lovers. It allows users to register and record their workout sessions in the form of a calendar. It utilizes the YouTube API to allow users to search for a workout to see how it is done
-Built using React, Material UI to achieve a clean UI and easy architecture and Firebase tools to store entries to DB, implement authentication, and host on web
-Developed the authentication using Firebase Auth, enforced only workout searched on YouTube API, implemented a functionality to allow users to edit workout sessions
+  \resumeSubHeadingListStart
 
-\subsection{Some Project}
-\subsubsection{Platform X}
-Did Stuff
-Did stuff well
-Well stuff done
-Done well stuff
+    \resumeSubheading
+      {Fidelity Investments}{Durham, NC}
+      {Associate Software Engineer}{Jan 2021 - Present}
+      \resumeItemListStart
+        \resumeItem{}
+            {Associate Software Engineer in Personal Investing Business Unit}
+        \resumeItem{}
+            {Many frontend components were overlooked and needed to be reused}
+        \resumeItem{}
+            {With the team of 3 other associates, created a Storybookjs dashboard to display all of the Angular components}
+        \resumeItem{}
+            {Resulted in engineers, designers, and other associates to reuse already defined components}
+      \resumeItemListEnd
+      
+    \resumeSubheading
+      {Acme Pro Academy}{New York, NY}
+      {Lead Technical Instructor}{Sep 2020 - Present}
+      \resumeItemListStart
+        \resumeItem{}
+            {Lead Instructor at automation testing bootcamp}
+        \resumeItem{}
+            {Helping students from different background to break into the tech industry}
+        \resumeItem{}
+            {Teaching class of 10 students core concepts of automation testing using Java, Selenium WebDriver, and more}
+        \resumeItem{}
+            {Managed to help 3 students find full-time positions at tech companies}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Errunds}{New York, NY}
+      {Software Engineer Intern}{Jun 2020 - Sep 2020}
+      \resumeItemListStart
+        \resumeItem{}
+            {Software Engineer Intern responsible for creating an admin web site}
+        \resumeItem{}
+            {Company was about to release its products to the public and did not have a way to manage customers}
+        \resumeItem{}
+            {With a co-intern, implemented admin site using React, Material UI, Apollo GraphQL, and Node.js API}
+        \resumeItem{}
+            {Resulted in company to have better structure and control over managing customers}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Keko Box}{New York, NY}
+      {Software Engineer Intern}{Mar 2020 - Jun 2020}
+      \resumeItemListStart
+        \resumeItem{}
+            {Software Engineer Intern responsible for managing customer orders in the web application}
+        \resumeItem{}
+            {Company did now have a way to manage customer fulfilled and unfulfilled orders}
+        \resumeItem{}
+            {Created endpoints for fulfilled and unfulfilled orders using Buffalo and front-end components with React}
+        \resumeItem{}
+            {Resulted in company raising \$5000 dollars from sponsors and increase its gross profit by 8\%}
+      \resumeItemListEnd
+
+  \resumeSubHeadingListEnd
+
+
+%-----------PROJECTS-----------------
+\section{Projects}
+  \resumeSubHeadingListStart
+  \resumeSubheading
+  {\href{https://my-workout-tracker-8763c.web.app/}{FitPal}}{}
+  {Web Application}{}
+  \resumeItemListStart
+    \resumeItem{}
+        {A Web Application built for workout lovers. It allows users to register and record their workout sessions in the form of a calendar. It utilizes the YouTube API to allow users to search for a workout to see how it is done}
+    \resumeItem{}
+        {Built using React, Material UI to achieve a clean UI and easy architecture and Firebase tools to store entries to DB, implement authentication, and host on web}
+    \resumeItem{}
+        {Developed the authentication using Firebase Auth, enforced only workout searched on YouTube API, implemented a functionality to allow users to edit workout sessions}
+  \resumeItemListEnd
+  \resumeSubheading
+  {\href{https://ajilk.com/tracked/}{Tracked}}{}
+  {Mobile App(Android/iOS)}{}
+  \resumeItemListStart
+    \resumeItem{}
+        {Mobile application (Android/iOS) for New York Department of Education that tracks the location and status of
+        200+ technology devices at public schools}
+    \resumeItem{}
+        {Built using Flutter SDK and Firebase to achieve cross platform compatibility as well as fast user authentication
+        and data retrieval}
+    \resumeItem{}
+        {Developed and designed functionality for user to add, delete, update, and view assets based on their school}
+  \resumeItemListEnd
+    
+  \resumeSubHeadingListEnd
+
+%-----------EDUCATION-----------------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {City University of New York - Brooklyn College}{Brooklyn, NY}
+      {Bachelor of Science in Computer Science}{Fall 2020}
+  \resumeSubHeadingListEnd
+
 \end{document}

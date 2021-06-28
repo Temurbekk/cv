@@ -14,6 +14,14 @@
 \usepackage{tabularx}
 \input{glyphtounicode}
 
+\hypersetup{ 
+  colorlinks=true, 
+  linkcolor=blue, 
+  filecolor=blue, 
+  citecolor = black,       
+  urlcolor=NavyBlue, 
+  } 
+
 \pagestyle{fancy}
 \fancyhf{}
 \fancyfoot{}
@@ -64,6 +72,7 @@
 \newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=*]}
 \newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
 \newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeSkillsListStart}{\begin{itemize}[leftmargin=*]}
 \newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
 \renewcommand{\maketitle}{\begin{itemize}\vspace{0.25em}}
 
@@ -86,7 +95,7 @@
 %--------PROGRAMMING SKILLS------------
 \section{Programming Skills}
     
-\resumeItemListStart
+\resumeSkillsListStart
 \resumeItem{Programming languages:}
   { Java, JavaScript, TypeScript, Swift, Python, Go}
 \resumeItem{Technologies:}
@@ -160,23 +169,22 @@
 \section{Projects}
   \resumeSubHeadingListStart
   \resumeSubheading
-  {\href{https://my-workout-tracker-8763c.web.app/}{FitPal}}{}
-  {Web Application}{}
+  {FitPal}{[{\href{https://github.com/fit-pal/my-workout-tracker}{Code}} | {\href{https://my-workout-tracker-8763c.web.app/}{Demo}}]}
+  {Web Application built for fitness enthusiasts by fitness enthusiasts}{}
   \resumeItemListStart
     \resumeItem{}
-        {A Web Application built for workout lovers. It allows users to register and record their workout sessions in the form of a calendar. It utilizes the YouTube API to allow users to search for a workout to see how it is done}
+        {It allows users to register and record their workout sessions in the form of a calendar. It utilizes the YouTube API to allow users to search for a workout to see how it is done}
     \resumeItem{}
         {Built using React, Material UI to achieve a clean UI and easy architecture and Firebase tools to store entries to DB, implement authentication, and host on web}
     \resumeItem{}
         {Developed the authentication using Firebase Auth, enforced only workout searched on YouTube API, implemented a functionality to allow users to edit workout sessions}
   \resumeItemListEnd
   \resumeSubheading
-  {\href{https://ajilk.com/tracked/}{Tracked}}{}
-  {Mobile App(Android/iOS)}{}
+  {Tracked}{[{\href{https://github.com/ajilk/tracked} {Code}} | {\href{https://ajilk.com/tracked/}{Demo}}]}
+  {Mobile App(Android/iOS) for New York Department of Education to keep track assets}{}
   \resumeItemListStart
     \resumeItem{}
-        {Mobile application (Android/iOS) for New York Department of Education that tracks the location and status of
-        200+ technology devices at public schools}
+        {Lead a team to build robust }
     \resumeItem{}
         {Built using Flutter SDK and Firebase to achieve cross platform compatibility as well as fast user authentication
         and data retrieval}

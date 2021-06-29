@@ -2,13 +2,13 @@
 
 ## Why LaTeX?
 
-There are a few reasons why I decided to use LaTeX to write my Resume.
+There are a few reasons why I prefered using LaTeX as opposed to a Google Docs
 
-1. With Google Docs, if I wanted to change format in one place, I would have to change it in multiple places
+1. With Google Docs, if I wanted to change the format in one place, I would have to change it in multiple places. Also, adding a new experience or a project is a pain in the neck
 
-2. I heard a lot of good things about LaTeX. So, I wanted to give it a try and `I Love It!`
+2. I have heard many good things about it and so far, I don't think I was lied to
 
-3. It looks cool :sunglasses:
+3. It sounds cool when you say you wrote your resume in LaTeX :sunglasses:
 
 ## Preview/Screenshot of my resume
 

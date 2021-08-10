@@ -67,7 +67,15 @@
       \textit{\small#3} & \textit{\small #4} \\
     \end{tabular*}\vspace{-5pt}
 }
+\newcommand{\resumeSubSubheading}[2]{
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-5pt}
+}
 
+\newcommand{\resumeSubItem}[2]{\resumeItem{#1}{#2}\vspace{-4pt}}
+
+\renewcommand{\labelitemii}{$\circ$}
 \renewcommand{\labelitemii}{$\circ$}
 
 \newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=*]}
@@ -109,16 +117,30 @@
 
     \resumeSubheading
       {Fidelity Investments}{Durham, NC}
-      {Associate Software Engineer(Web/iOS)}{Jan 2021 - Present}
+      % iOS developer
+      {Associate Software Engineer(Frontend iOS)}{Jun 2021 - Present}
       \resumeItemListStart
         \resumeItem{}
-            {Web: Created Jenkins pipeline to use smart Nx CLI to decreased build and deploy time by 60\%}
+            {Supports iOS squad on implementing omnichannel experience accross Mobile and Web}
         \resumeItem{}
-            {Web: Integrated Storybook.js to Angular Nx monorepo and increase component reusability by 48\%}
+            {Reviews 3-4 pull requests a day to prevent bugs from being merged to "main" branch}
         \resumeItem{}
-            {iOS: Supported iOS squad on implementing omnichannel experience accross Mobile and Web}
+            {Performs minor/major bugfixes on development and production environments}
         \resumeItem{}
-            {iOS: Integrated Google API for address autocompletion on Fidelity Spire}
+            {Integrated Google Maps API for address autocompletion}
+      \resumeItemListEnd
+      % Web Developer
+      \resumeSubSubheading
+      {Associate Software Engineer(Fullstack Web)}{Jan 2021 - June 2021}
+      \resumeItemListStart
+        \resumeItem{}
+            {Enhanced Jenkins pipeline by integrating Nx CLI to decreased build and deploy time by 67\%}
+        \resumeItem{}
+            {Integrated Storybook to Angular Nx monorepo and increases component reusability by 48\%}
+        \resumeItem{}
+            {Implemented Cypress End-To-End screenshot testing on Storybook to prevent component level bugs}
+        \resumeItem{}
+            {Performed dependency migration on Nx and Storybook to increase internal usability}
       \resumeItemListEnd
       
     \resumeSubheading
@@ -145,25 +167,22 @@
             {Integrated MaterialUI and React components to generate dashboards}
         \resumeItem{}
             {Performed GraphQL queries using Apollo to fetch data from Node.js, GraphQL backend service}
-        \resumeItem{}
-            {Implemented Admin authentication flow using Passport Node.js middleware}
       \resumeItemListEnd
-
     \resumeSubheading
       {Keko Box}{New York, NY}
       {Software Engineer Intern(Fullstack Web)}{Mar 2020 - Jun 2020}
       \resumeItemListStart
         \resumeItem{}
-            {Implemented backend endpoints Go to allow vendor to access recently fulfilled/unfulfilled orders}
+            {Implemented backend endpoints in Go to allow vendor to access recently fulfilled/unfulfilled orders}
         \resumeItem{}
             {Built frontend components using React for above feature which resulted in seed funding of \$30,000}
         \resumeItem{}
-            {Integrated Logout functionality using Auth0 authentication/autherization service}
-        \resumeItem{}
             {Performed Database migration to store vendors' par levels in PostgreSQL}
       \resumeItemListEnd
+      
 
   \resumeSubHeadingListEnd
+
 
 
 %-----------PROJECTS-----------------

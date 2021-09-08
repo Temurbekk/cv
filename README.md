@@ -12,4 +12,4 @@ There are a few reasons why I prefered using LaTeX as opposed to a Google Docs
 
 ## Preview/Screenshot of my resume
 
-![Resume Screenshot](/resume.png)
+![Resume Screenshot](/Temurbek_Sabirov_Resume.png)
